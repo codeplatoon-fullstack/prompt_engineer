@@ -150,3 +150,36 @@ Text:
 ```{text}```
 """
 ```
+
+- Tactic 2: Instruct the model to work out its own solujtion before rushing to a conclusion
+
+  - By instructing the LLM to work out its own solution to a problem you are assuring that it wont just make an assumption that something is correct. This is valuable when running word problems and/or mathematical reasoning along with an attempteed solution. You can as the LLM to create it's own solution to the problem and compare it to the solution provided, identify errors, and provide constructive feedback.
+
+## LLM Limitations
+
+- Hallucinations = Makes statements that sound plausible but are not actually true. (Probability upon data provided to the LLM)
+
+```python
+prompt = f"""
+Tell me about AeroGlide UltraSlim Smart Toothbrush by Boie
+"""
+```
+
+Boie is a real company but the pruduct is not yet the LLM will still provide a `Hallucinated` answer that it thinks COULD be factual.
+
+- Reducing hallucinations = provide the LLM a specific set of resources it should utilize to populate it's answer and you could even ask its response to come attached with resources.
+
+## Iterative Prompt Development
+
+1. IDEA
+2. IMPLEMENTATION (CODE/DATA/PROMPT)
+3. EXPERIMENT WITH RESULT
+4. ERROR ANALYSIS
+5. REPEAT
+
+Prompt guidelines to follow:
+
+- Be clear and specific
+- Analyze why result does not give desired output
+- Clarigy instructions, give more time to think
+- Refine prompts with a batch of examples
