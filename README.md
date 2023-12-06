@@ -1,4 +1,4 @@
-# CHAT GPT-PROMT ENGINEER
+# CHAT GPT-PROMPT ENGINEER
 
 ## Two types of LLM (Large Language Models) API’s
 
